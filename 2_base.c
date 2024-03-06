@@ -10,6 +10,8 @@ GtkWidget *idProfEntry;
 
 void base_window_valider(GtkWidget *widget, gpointer data) {
     const gchar *idProf = gtk_entry_get_text(GTK_ENTRY(idProfEntry));
+    (void)widget;
+    (void)data;
 
     // Appel de la fonction de vérification
     if (verifier_id_prof(idProf)) {
@@ -22,6 +24,8 @@ void base_window_valider(GtkWidget *widget, gpointer data) {
 }
 
 void inscription(GtkWidget *widget, gpointer data) {
+    (void)widget;
+    (void)data;
 
     // Détruire la fenêtre courante
     gtk_widget_destroy(GTK_WIDGET(data));
